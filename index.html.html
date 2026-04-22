@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- ✅ FONT (Privacy 스타일: clean + modern) -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<title>Confidentiality Challenge</title>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+/* ✅ UNIFIED DESIGN SYSTEM */
+:root{
+  --primary:#2563eb;
+  --primary-dark:#1e40af;
+  --secondary:#7c3aed;
+
+  --bg:#f8fafc;
+  --surface:#ffffff;
+  --text:#0f172a;
+  --muted:#64748b;
+  --border:#e5e7eb;
+
+  --success:#16a34a;
+  --danger:#dc2626;
+  --warning:#f59e0b;
+
+  --radius:12px;
+}
+
+/* ===== BASE ===== */
+body{
+  font-family:'Inter', -apple-system, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  padding:2rem 1rem;
+}
+
+/* ===== LAYOUT ===== */
+.wrap{max-width:720px;margin:0 auto}
+
+/* ===== HEADER ===== */
+.top-bar{
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:white;
+  padding:1.5rem;
+  border-radius:var(--radius);
+  text-align:center;
+  margin-bottom:1.5rem;
+}
+.top-bar h1{font-size:20px;font-weight:800}
+.top-bar p{font-size:12px;opacity:.8;margin-top:4px}
+
+/* ===== CARD ===== */
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:1.75rem;
+  box-shadow:0 4px 12px rgba(0,0,0,0.04);
+}
+
+/* ===== TEXT ===== */
+.title{
+  font-size:22px;
+  font-weight:800;
+  color:var(--primary-dark);
+  text-align:center;
+  margin-bottom:.5rem;
+}
+.sub{
+  font-size:14px;
+  color:var(--muted);
+  text-align:center;
+  line-height:1.6;
+  margin-bottom:1.5rem;
+}
+
+/* ===== INPUT ===== */
+input{
+  width:100%;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1.5px solid var(--border);
+  font-family:inherit;
+  font-size:14px;
+  margin-bottom:14px;
+}
+input:focus{
+  outline:none;
+  border-color:var(--primary);
+}
+
+/* ===== BUTTON SYSTEM (완전 통일) ===== */
+.btn{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  font-weight:600;
+  font-size:14px;
+  border:none;
+  cursor:pointer;
+  transition:.2s;
+}
+
+/* primary */
+.btn-primary{
+  background:var(--primary);
+  color:white;
+}
+.btn-primary:hover{
+  background:var(--primary-dark);
+}
+
+/* secondary */
+.btn-secondary{
+  background:var(--secondary);
+  color:white;
+}
+
+/* outline */
+.btn-outline{
+  background:white;
+  border:1.5px solid var(--primary);
+  color:var(--primary);
+}
+
+/* ===== BADGE ===== */
+.badge{
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:white;
+  padding:2rem;
+  border-radius:var(--radius);
+  text-align:center;
+  margin-bottom:1.5rem;
+}
+
+/* ===== SMALL UI ===== */
+.pill{
+  display:inline-block;
+  padding:4px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:600;
+  background:#eff6ff;
+  color:var(--primary);
+}
+
+/* ===== HOVER CLEANUP ===== */
+.btn:hover{transform:translateY(-1px)}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="top-bar">
+    <h1>🔒 Confidentiality Challenge</h1>
+    <p>Privacy & Ethics Training · University Library</p>
+  </div>
+
+  <!-- MAIN CARD -->
+  <div class="card">
+
+    <div class="title">Meet Desperate David</div>
+    <div class="sub">
+      Can you protect patron privacy while still being helpful?<br>
+      This version now matches your Privacy page design system.
+    </div>
+
+    <input type="text" placeholder="Enter your name"/>
+
+    <button class="btn btn-primary">Start Training →</button>
+
+  </div>
+
+  <!-- RESULT STYLE EXAMPLE -->
+  <div class="badge">
+    <div style="font-size:40px;margin-bottom:8px">🛡</div>
+    <div style="font-weight:800;font-size:18px">Certified Privacy Guardian</div>
+    <div style="font-size:13px;opacity:.8">Design System Unified</div>
+  </div>
+
+</div>
+</body>
+</html>
